@@ -8,19 +8,19 @@ Gaming
 {
 background-color:lightgreen;
  -webkit-border-radius: 100px;
-        border-radius: 50px;
+        border-radius: 60px;
         border: none;
         cursor: pointer;
         display: inline-block;
         font-family: sans-serif;
-        font-size: 20px;
+        font-weight:bold;
+        font-size: 49px;
         color: black;
-        padding: 5px 30px;
+        padding: 10px 30px;
         text-align: center;
-        box-shadow:0 0 10px lightgreen;
-        text-decoration: none;
-        
-margin:1px 2px 0px 8px;
+        box-shadow:0 0 20px lightgreen;
+        text-decoration: none;      
+margin:5px 0px 0px 10px;
 }
 .button2
 {
@@ -28,23 +28,25 @@ background-color:lightpink;
  -webkit-border-radius: 100px;
         border-radius: 50px;
         border: none;
+        font-weight:bold;
         cursor: pointer;
         display: inline-block;
         font-family: sans-serif;
-        font-size: 20px;
+        font-size: 49px;
         color: black;
-        padding: 5px 30px;
+        padding: 10px 30px;
         text-align: center;
         text-decoration: none;
-        box-shadow:0 0 10px pink;
-margin:66px 0px 0px 240px;
+        box-shadow:0 0 20px pink;
+margin:130px 0px 0px 0px;
 }
 .img2
 {
+padding:0px 75px 0px 75px;
 border: solid black;
-border-radius:75%;
-margin:5px 0px 0px 370px;
-animation:glows 6300ms 10;
+border-radius:50%;
+margin:20px 0px 0px 2px;
+animation:glows 6300ms 5;
 }
 @keyframes glows
 {
@@ -71,29 +73,16 @@ background-color:red;
         cursor: pointer;
         display: inline-block;
         font-family: sans-serif;
-        font-size: 20px;
+        font-size: 51px;
+        font-weight:bold;
         color: black;
-        padding: 5px 30px;
+        padding: 10px 30px;
         text-align: center;
         text-decoration: none;
-        box-shadow:0 0 10px red;
-margin:95px 0px 0px 360px;
+        box-shadow:0 0 20px red;
+margin:120px 0px 0px 0px;
 }
-@keyframes glow
-{
-0%
-{
-background-color:black;
-}
-50%
-{
-background-color:black;
-}
-100%
-{
-background-color:red;
-}
-}
+
 @keyframes glowing
 {
 0%
@@ -123,25 +112,87 @@ animation:glowing 3100ms 1;
 background-image:url("creative.gif");
 background-repeat:no-repeat;
 border:solid #00ffff;
-padding:5px 100px 10px 5px;
-margin:0px 400px 0px 390px;
-box-shadow:0 0 0px blue;
+padding:100px 400px 30px 400px;
+margin:0px 400px 0px 80px;
+box-shadow:0 0 25px blue;
 }
 
 .img1
 {
-margin:0px 0px 0px 20px;
+margin:100px 0px 100px 0px;
 border:solid pink;
-box-shadow:0 0 5px pink;
+box-shadow:0 0 30px pink;
+}
+@media only screen and (max-width: 620px){
+.div1
+{
+background-image:url("creative.gif");
+background-repeat:no-repeat;
+border:solid #00ffff;
+padding:5px 200px 10px 200px;
+margin:0px 400px 0px 390px;
+box-shadow:0 0 0px blue;
+}
+.button1
+{
+background-color:lightgreen;
+ -webkit-border-radius: 100px;
+        border-radius: 60px;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        color: black;
+        padding: 5px 30px;
+        text-align: center;
+        box-shadow:0 0 10px lightgreen;
+        text-decoration: none;
+        
+margin:1px 2px 0px 8px;
+}
+.button2
+{
+background-color:lightpink;
+ -webkit-border-radius: 100px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 49px;
+        color: black;
+        padding: 5px 30px;
+        text-align: center;
+        text-decoration: none;
+        box-shadow:0 0 10px pink;
+margin:66px 0px 0px 240px;
+}
+.button3
+{
+background-color:red;
+ -webkit-border-radius: 100px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 53px;
+        color: black;
+        padding: 5px 30px;
+        text-align: center;
+        text-decoration: none;
+        box-shadow:0 0 10px red;
+margin:95px 0px 0px 360px;
+}
 }   
 </style> 
 </head>
 <body style="background-color:black;">
 <center>
-<img class="img1" src="tic-tac-toe img2.jpeg" height=30% width=70%>
+<img class="img1" src="tic-tac-toe img2.jpeg" height=40% width=90%>
 </center>
 <p></p>
-<div class="div3">
 <div class="div1">
 <center>
 <a href="tt.html">
@@ -151,9 +202,9 @@ box-shadow:0 0 5px pink;
 <button class="button2">BACK</button>
 </a>
 <button onclick="MyMethod()" class="button3">HowToPlay</button>
-<img class="img2" src="arrow.jpg" height=13% width=30%>
-</div>
+<img class="img2" src="arrow.jpg" height=250px width=185px>
 </center>
+</div>
 <script>
 function MyMethod()
 {
