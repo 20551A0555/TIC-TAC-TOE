@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>
+Games
+</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+body
+{
+background-color:black;
+}
+.img1
+{
+border:solid blue;
+box-shadow:0 0 20px blue;
+}
+.button2
+{
+  background-color:#ed2939;
+ -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        color: black;
+        padding: 5px 30px;
+        text-align: center;
+        text-decoration: none;
+        margin:0px 300px 0px 0px;
+        box-shadow:0 0 20px red;
+}
+.button1{
+        background-color:blue;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: black;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+         box-shadow: 0 0 20px blue;
+        margin: 4px 100px 0px 0px;
+      }
+      @keyframes glowing {
+        0%
+        {
+         background-color:black;
+         box-shadow: 0 0 20px black;
+        }
+        50%
+        { 
+         background-color:black;
+         box-shadow: 0 0 20px black;
+        }
+        100% {
+          background-color:blue;
+          box-shadow: 0 0 25px blue;
+        }
+     }
+     .button1{
+        animation: glowing 11400ms 1;
+      }
+    @media only screen and (max-width:620px){
+      .button1
+         {
+           margin:0px 0px 0px 100px;
+     }
+     .button2
+     {
+        margin:10px 0px 0px 0px;
+      }
+   
+}
+</style>
+</head>
+<body>
+<center>
+<img class="img1" src="kk logo.gif" height=30% width=55%>
+<h2 style="color:violet;">Gaming presents</h2>
+</center>
+<center>
+<img src="loading.gif" height=42% width=90%>
+</center>
+<center>
+<a href="www.google.com">
+<button class="button2">
+EXIT
+</button>
+</a><span></span>
+<a href="frame2.0.html">
+<button class="button1">CONTINUE</button>
+</a>
+</center>
+</body>

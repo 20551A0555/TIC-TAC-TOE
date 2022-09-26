@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>
+Gaming
+</title>
+<style>
+.button1
+{
+background-color:lightgreen;
+ -webkit-border-radius: 100px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        color: black;
+        padding: 5px 30px;
+        text-align: center;
+        box-shadow:0 0 10px lightgreen;
+        text-decoration: none;
+        
+margin:1px 2px 0px 8px;
+}
+.button2
+{
+background-color:lightpink;
+ -webkit-border-radius: 100px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        color: black;
+        padding: 5px 30px;
+        text-align: center;
+        text-decoration: none;
+        box-shadow:0 0 10px pink;
+margin:66px 0px 0px 240px;
+}
+.img2
+{
+border: solid black;
+border-radius:75%;
+margin:5px 0px 0px 370px;
+animation:glows 6300ms 10;
+}
+@keyframes glows
+{
+0%
+{
+opacity:0;
+}
+50%
+{
+opacity:0;
+}
+100%
+{
+opacity:1;
+border:solid red;
+}
+}
+.button3
+{
+background-color:red;
+ -webkit-border-radius: 100px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+        font-family: sans-serif;
+        font-size: 20px;
+        color: black;
+        padding: 5px 30px;
+        text-align: center;
+        text-decoration: none;
+        box-shadow:0 0 10px red;
+margin:95px 0px 0px 360px;
+}
+@keyframes glow
+{
+0%
+{
+background-color:black;
+}
+50%
+{
+background-color:black;
+}
+100%
+{
+background-color:red;
+}
+}
+@keyframes glowing
+{
+0%
+{
+background-color:black;
+}
+100%
+{
+background-color:black;
+}
+}
+.button1
+{
+animation:glowing 2300ms 1;
+}
+.button2
+{
+animation:glowing 2850ms 1;
+}
+.button3
+{
+animation:glowing 3100ms 1;
+}
+
+.div1
+{
+background-image:url("creative.gif");
+background-repeat:no-repeat;
+border:solid #00ffff;
+padding:5px 100px 10px 5px;
+margin:0px 400px 0px 390px;
+box-shadow:0 0 0px blue;
+}
+
+.img1
+{
+margin:0px 0px 0px 20px;
+border:solid pink;
+box-shadow:0 0 5px pink;
+}   
+</style> 
+</head>
+<body style="background-color:black;">
+<center>
+<img class="img1" src="tic-tac-toe img2.jpeg" height=30% width=70%>
+</center>
+<p></p>
+<div class="div3">
+<div class="div1">
+<center>
+<a href="tt.html">
+<button class="button1">START</button>
+</a>
+<a href="frame1.0.html">
+<button class="button2">BACK</button>
+</a>
+<button onclick="MyMethod()" class="button3">HowToPlay</button>
+<img class="img2" src="arrow.jpg" height=13% width=30%>
+</div>
+</center>
+<script>
+function MyMethod()
+{
+location.replace("ruled.html")
+}
+</script>
+</body>
