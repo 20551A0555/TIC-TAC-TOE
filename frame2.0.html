@@ -106,7 +106,20 @@ animation:glowing 2850ms 1;
 {
 animation:glowing 3100ms 1;
 }
-
+@keyframes glo{
+ 0%
+ {
+  box-shadow:0 0 5px black;
+ }
+ 50%
+ {
+  box-shadow:0 0 15px #00FFFF;
+ }
+ 100%
+ {
+  box-shadow:0 0 30px pink;
+ }
+ }
 .div1
 {
 background-image:url("creative.gif");
@@ -122,6 +135,7 @@ box-shadow:0 0 25px blue;
 margin:40px 0px 100px 0px;
 border:solid pink;
 box-shadow:0 0 30px pink;
+animation:glows 2000ms 15;
 }
 @media only screen and (max-width: 620px){
 .div1
