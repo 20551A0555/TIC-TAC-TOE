@@ -27,7 +27,7 @@ background-color:yellow;
 }
 h1
 {
-animation:glowing 2000ms 1;
+animation:glowing 2000ms 2;
 }
 table {
   border:solid 2px white;
@@ -37,7 +37,7 @@ td{
   color:white;
   background-color:black;
   border: 0px solid #333;
-  height: 100px;
+  height: 150px;
   width: 100px;
   box-sizing: border-box;
   text-align: center;
