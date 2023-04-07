@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+button{
+cursor:pointer;
+padding:10px 25px;
+background-color:rgb(230,230,250);
+border-radius:70px 50px;
+font-size:30px;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@keyframes glowing
+{
+0%
+{
+color:black;
+background-color:rgb(144,238,144);
+}
+50%{
+background-color:rgb(144,238,144);
+color:black;
+}
+100%
+{
+color:black;
+background-color:white;
+}
+}
+button
+{
+animation:glowing 1500ms 100;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  opacity:0.5;
+  /* The image used */
+  //background-image: url("neonback.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgb(0,0,0.4);/* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+</head>
+<body style="background-color:rgb(119,136,153);">
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h2>** RESULT **</h2>
+  <h1 style="font-size:50px">YOU LOST</h1>
+  <p></p>
+<button onclick="myfun()"><i><b>REPLAY</b></i></button>
+</div>
+<script>
+function myfun(){
+location.replace("tic-game.html");}</script>
+</body>
+</html>
