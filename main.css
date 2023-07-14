@@ -45,6 +45,7 @@ td{
   vertical-align: middle;
   font-size: 70px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 table tr:first-child td {
